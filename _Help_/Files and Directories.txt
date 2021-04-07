@@ -1,0 +1,30 @@
+# Files and Directories
+# Module: pathlib (https://docs.python.org/3/library/pathlib.html#module-pathlib)
+
+from pathlib import Path
+
+# Absolute path (C:\Program Files\Microsoft\)
+
+# Relative path
+path = Path("ECommerce")
+create_path = Path("New Folder")
+current_directory = Path()
+
+# Check if path exists and remove if true
+if create_path.exists():
+    create_path.rmdir()         # will remove the path in the current project folder
+    print(f"Folder {create_path} removed.")
+
+# Create folder
+create_path.mkdir()      # will create the path in the current project folder
+print(f"Folder {create_path} created.")
+
+# Iteriere über alle *.py files im Verzeichnis und gebe den Namen der Datei aus
+# Logic:
+#   *.*     -> search for all files
+#   *       -> search for all files and folders
+#   *.py    -> search only for python files
+#   *.xlsx  -> search only for excel files
+#   ...
+for file in current_directory.glob('*.py'):                 
+    print(file)

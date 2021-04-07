@@ -1,0 +1,9 @@
+# PyPI
+# Modules and packages created from the community free to use
+# https://pypi.org
+
+# Module: openpyxl (https://pypi.org/project/openpyxl/)
+# Module to read/write xlsx/xlsm files
+# On Homepage you can find the command to put in Terminal (cmd) to download the module automatically
+# "pip install openpyxl" (in cmd/terminal)
+# Imported packages can be found under: "External Libraries -> Python 3.8 -> site-packages" (Refresh needed after download)

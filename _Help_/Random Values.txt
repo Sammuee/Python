@@ -1,0 +1,18 @@
+# Generating Random Values
+# Full explanation of modules can be found here: https://docs.python.org/3/py-modindex.html
+# Standard modules can be found under: "External Libraries > Python38 library root -> Lib"
+import random as r
+
+# Random values
+for i in range(3):
+    print(r.random())
+
+# Random Values in a specific range (10-20 in our case)
+for i in range(3):
+    print(r.randint(10, 20))
+
+# randomly selection from a list
+
+members = ['Sammy', 'Vanessa', 'Benjamin', 'Chris', 'Vera']
+for i in range(3):
+    print(r.choice(members))
